@@ -1,0 +1,14 @@
+<h1>Login</h1>
+
+<form action="/welcome/login" method="get">
+  <p><%= @flash %></p>
+  <input type="text" name="user_name_login" placeholder="user name" required class="input pass"/>
+  </br>
+  <input type="password" name="password_login" placeholder="password" required class="input pass"/>
+  </br>
+  <input type="submit" value="Login" class="inputButton"/>
+</form>
+
+<form action="/welcome/index" method="get">
+  <input type="submit" value="Register" class="inputButton"/>
+</form>

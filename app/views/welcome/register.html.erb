@@ -1,0 +1,31 @@
+<!-- <h1>User Information</h1> -->
+<p><%= @flash %></p>
+</br>
+<h1 class="input pass">Hello <%= @the_user.first_name %>
+</h1>
+</br>
+First Name: <%= @the_user.first_name %>
+</br>
+Last Name: <%= @the_user.last_name %>
+</br>
+Address: <%= @the_user.street_address %>
+</br>
+City: <%= @the_user.city %>
+</br>
+State: <%= @the_user.state %>
+</br>
+Zip Code: <%= @the_user.zip_code %>
+</br>
+Country: <%= @the_user.country %>
+</br>
+Phone Number: <%= @the_user.phones.map { |phone| phone.phone }.join(', ') %>
+</br>
+Email: <%= @the_user.email %>
+</br>
+User Name: <%= @the_user.user_name %>
+</br>
+<!-- Password: <%= @the_user.password %>
+</br> -->
+<form action="/welcome/logout" method="get">
+  <input type="submit" value="Logout" class="inputButton"/>
+</form>
